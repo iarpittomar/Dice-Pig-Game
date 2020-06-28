@@ -126,7 +126,7 @@ button:focus {
     outline: none;
 }
 
-i {
+.icon {
     color: #EB4D4D;
     display: inline-block;
     margin-right: 15px;
@@ -152,3 +152,12 @@ i {
 
 .winner { background-color: #f7f7f7; }
 .winner .player-name { font-weight: 300; color: #EB4D4D; }
+
+
+h3{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #EB4D4D;
+    font-weight: 200;
+}
