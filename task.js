@@ -79,8 +79,16 @@ document.querySelector(".btn-hold").addEventListener("click", function () {
     document.querySelector("#score-" + activePlayer).textContent =
       scores[activePlayer];
 
+    var input = document.querySelector(".final-score").value;
+    var winingScore;
+    if (input) {
+      winingScore = input;
+    } else {
+      winingScore = 100;
+    }
+
     //3. Check if player won the game
-    if (scores[activePlayer] >= 200) {
+    if (scores[activePlayer] >= winingScore) {
       gamePlaying = false;
       document.querySelector("#name-" + activePlayer).textContent = "WINNER!";
       document.querySelector(".dice").style.display = "none";
